@@ -9,7 +9,7 @@ function目录下prune是剪枝方法，使用pruning生成掩码，使用maskin
 
 function目录下quantize_weight_noise是权重量化以及加入噪音，可以在训练/推断过程中读取权重值按照需要进行量化和加入噪音。
 
-model目录下建立了4个模型cifar是类似vgg结构的cifar-10模型，lenet是用户mnist的小型CNN模型，mlp是一个用于MNIST的简单的多层感知机，VGG是ImageNet的VGG-16模型
+model目录下建立了4个模型cifar是类似vgg结构的cifar-10模型，LeNet是用户MNIST的小型CNN模型，mlp是一个用于MNIST的简单的多层感知机，VGG是ImageNet的VGG-16模型
 
 主目录下给出了MNIST_MLP和CIFAR_VGG两个例子，分别使用mlp和cifar模型
 
