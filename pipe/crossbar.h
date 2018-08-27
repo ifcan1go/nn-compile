@@ -56,7 +56,7 @@ typedef struct Crossbar
 			float tmp = 0;
 			for (int j = 0; j < l; j ++)
 			{
-				tmp += input[j] * (CB_cells[i*l+j] /*+ get_noise(CB_cells[i*l+j])*/);
+				tmp += input[j] * (CB_cells[i*l+j] + get_noise(CB_cells[i*l+j]));
 			}
 			output[i] = tmp;
 			//cout << output[i] << endl;
