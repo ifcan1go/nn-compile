@@ -8,7 +8,7 @@
 SC_MODULE(stage4)
 {
     sc_in<float> in_data[2*CROSSBAR_W];
-    sc_out<float> da_res[CROSSBAR_L*(8/DA_WIDTH)]; //daÊä³ö Êý×é´óÐ¡Îª8*size
+    sc_out<float> da_res[CROSSBAR_L*(8/DA_WIDTH)]; //daï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Îª8*size
     sc_in<bool> clk;
 	sc_in<int> i4;
 	sc_out<int> i5;
@@ -19,10 +19,10 @@ SC_MODULE(stage4)
 		int bitnum;
 		int* data = new int[CROSSBAR_L];
 		da dac(DA_V);
-		int m = 0;//ÓÃ×÷ÒÆÎ»
+		int m = 0;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»
 		for (int i = 0; i < DA_WIDTH; i ++)
 			m += int(pow(2, double(i)));
-		for (int i = 0; i < CROSSBAR_L-CROSSBAR_W; i ++)
+		for (int i = 0; i < CROSSBAR_L-100; i ++)
 			data[i] = 0;
 		for (int i = 0; i < 100; i ++)
 		{
